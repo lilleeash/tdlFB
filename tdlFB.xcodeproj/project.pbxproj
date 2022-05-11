@@ -21,6 +21,8 @@
 		7CD85E3A282BADC200442BFE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD85E39282BADC200442BFE /* FirebaseDatabase */; };
 		7CD85E3C282BAEBF00442BFE /* Modifires.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E3B282BAEBF00442BFE /* Modifires.swift */; };
 		7CD85E43282BB9F100442BFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E42282BB9F100442BFE /* GoogleService-Info.plist */; };
+		7CD85E49282BC00C00442BFE /* ToDoItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E48282BC00C00442BFE /* ToDoItemModel.swift */; };
+		7CD85E4C282BC2A300442BFE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E4B282BC2A300442BFE /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		7CD85E32282BA97200442BFE /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7CD85E3B282BAEBF00442BFE /* Modifires.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifires.swift; sourceTree = "<group>"; };
 		7CD85E42282BB9F100442BFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7CD85E48282BC00C00442BFE /* ToDoItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemModel.swift; sourceTree = "<group>"; };
+		7CD85E4B282BC2A300442BFE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		7CD85E3D282BAF7D00442BFE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7CD85E4A282BC28400442BFE /* Settings */,
 				7CD85E3E282BAF8900442BFE /* FirebaseAuth */,
 				7CD85E3F282BAF9A00442BFE /* Home */,
 			);
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD85E32282BA97200442BFE /* HomeView.swift */,
+				7CD85E48282BC00C00442BFE /* ToDoItemModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -159,6 +165,14 @@
 				7CD85E30282BA96800442BFE /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CD85E4A282BC28400442BFE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7CD85E4B282BC2A300442BFE /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		87E866D4425A6ED60EAD93BB /* Pods */ = {
@@ -293,10 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD85E49282BC00C00442BFE /* ToDoItemModel.swift in Sources */,
 				7CD85E24282B9E7200442BFE /* assets.swift in Sources */,
 				7CD85E3C282BAEBF00442BFE /* Modifires.swift in Sources */,
 				7CD85E2D282BA96100442BFE /* RegistratioinView.swift in Sources */,
 				7CD85E31282BA96900442BFE /* AuthViewModel.swift in Sources */,
+				7CD85E4C282BC2A300442BFE /* SettingsView.swift in Sources */,
 				7CD85E10282B86C500442BFE /* tdlFBApp.swift in Sources */,
 				7CD85E34282BA97200442BFE /* HomeView.swift in Sources */,
 				7CD85E2F282BA96100442BFE /* SignUpView.swift in Sources */,

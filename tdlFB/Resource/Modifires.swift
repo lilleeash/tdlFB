@@ -56,3 +56,17 @@ struct MyTextFieldStyle: TextFieldStyle {
         .overlay(RoundedRectangle(cornerRadius: 7).stroke(Color(Asset.Colors.lightGray.name)))
     }
 }
+
+
+struct CustomSignOutButton: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 7)
+                .foregroundColor(.gray)
+                .opacity(0.1)
+                .frame(maxWidth: .infinity, maxHeight: 45)
+            Text("Sign Out")
+                .foregroundColor(.red)
+        }.padding()
+    }
+}

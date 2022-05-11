@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegistratioinView: View {
     
-    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var authViewModel: AuthViewModel
     @State private var currentPage: Views = .registrationView
     private let regImage = Asset.Images.registration.name
     

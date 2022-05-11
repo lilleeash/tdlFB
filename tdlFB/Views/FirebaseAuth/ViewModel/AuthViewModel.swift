@@ -57,9 +57,9 @@ enum Views {
 }
 
 struct SwitchBetweenViews: View {
-    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var authViewModel: AuthViewModel
     var body: some View {
-        switch viewModel.currentView {
+        switch authViewModel.currentView {
         case .registrationView:
             RegistratioinView()
         case .homeView:
