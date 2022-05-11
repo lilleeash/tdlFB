@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0547D583877EC9EFBE3AD0EA /* Pods_tdlFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */; };
 		7CD85E10282B86C500442BFE /* tdlFBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E0F282B86C500442BFE /* tdlFBApp.swift */; };
 		7CD85E12282B86C600442BFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E11282B86C500442BFE /* ContentView.swift */; };
 		7CD85E14282B86C900442BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E13282B86C900442BFE /* Assets.xcassets */; };
 		7CD85E17282B86C900442BFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E16282B86C900442BFE /* Preview Assets.xcassets */; };
+		7CD85E24282B9E7200442BFE /* assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E23282B9E7200442BFE /* assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FE25D568A4625394DE2146E /* Pods-tdlFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.debug.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.debug.xcconfig"; sourceTree = "<group>"; };
+		2941A6FD36A406A6DE3F57E8 /* Pods-tdlFB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.release.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.release.xcconfig"; sourceTree = "<group>"; };
+		5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tdlFB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD85E0C282B86C500442BFE /* tdlFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tdlFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD85E0F282B86C500442BFE /* tdlFBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tdlFBApp.swift; sourceTree = "<group>"; };
 		7CD85E11282B86C500442BFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CD85E13282B86C900442BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CD85E16282B86C900442BFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CD85E1D282B877200442BFE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7CD85E1E282B939A00442BFE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7CD85E1F282B93AC00442BFE /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		7CD85E23282B9E7200442BFE /* assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,18 +35,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0547D583877EC9EFBE3AD0EA /* Pods_tdlFB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A8212C4769419BAF01C8022 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CD85E03282B86C500442BFE = {
 			isa = PBXGroup;
 			children = (
 				7CD85E1D282B877200442BFE /* .gitignore */,
+				7CD85E1E282B939A00442BFE /* Podfile */,
+				7CD85E1F282B93AC00442BFE /* swiftgen.yml */,
 				7CD85E0E282B86C500442BFE /* tdlFB */,
 				7CD85E0D282B86C500442BFE /* Products */,
+				87E866D4425A6ED60EAD93BB /* Pods */,
+				4A8212C4769419BAF01C8022 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +76,7 @@
 			children = (
 				7CD85E0F282B86C500442BFE /* tdlFBApp.swift */,
 				7CD85E11282B86C500442BFE /* ContentView.swift */,
+				7CD85E20282B94B600442BFE /* Resource */,
 				7CD85E13282B86C900442BFE /* Assets.xcassets */,
 				7CD85E15282B86C900442BFE /* Preview Content */,
 			);
@@ -69,6 +91,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7CD85E20282B94B600442BFE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7CD85E23282B9E7200442BFE /* assets.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		87E866D4425A6ED60EAD93BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FE25D568A4625394DE2146E /* Pods-tdlFB.debug.xcconfig */,
+				2941A6FD36A406A6DE3F57E8 /* Pods-tdlFB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,6 +115,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CD85E1A282B86C900442BFE /* Build configuration list for PBXNativeTarget "tdlFB" */;
 			buildPhases = (
+				235C5A8E56CFBD11ED55DCF8 /* [CP] Check Pods Manifest.lock */,
 				7CD85E08282B86C500442BFE /* Sources */,
 				7CD85E09282B86C500442BFE /* Frameworks */,
 				7CD85E0A282B86C500442BFE /* Resources */,
@@ -134,11 +174,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		235C5A8E56CFBD11ED55DCF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tdlFB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CD85E08282B86C500442BFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD85E24282B9E7200442BFE /* assets.swift in Sources */,
 				7CD85E12282B86C600442BFE /* ContentView.swift in Sources */,
 				7CD85E10282B86C500442BFE /* tdlFBApp.swift in Sources */,
 			);
@@ -263,6 +329,7 @@
 		};
 		7CD85E1B282B86C900442BFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE25D568A4625394DE2146E /* Pods-tdlFB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +359,7 @@
 		};
 		7CD85E1C282B86C900442BFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2941A6FD36A406A6DE3F57E8 /* Pods-tdlFB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

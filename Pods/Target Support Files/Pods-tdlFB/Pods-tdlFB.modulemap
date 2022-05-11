@@ -1,0 +1,6 @@
+framework module Pods_tdlFB {
+  umbrella header "Pods-tdlFB-umbrella.h"
+
+  export *
+  module * { export * }
+}
