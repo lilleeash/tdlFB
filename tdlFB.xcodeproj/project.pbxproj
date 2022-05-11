@@ -13,6 +13,7 @@
 		7CD85E14282B86C900442BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E13282B86C900442BFE /* Assets.xcassets */; };
 		7CD85E17282B86C900442BFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E16282B86C900442BFE /* Preview Assets.xcassets */; };
 		7CD85E24282B9E7200442BFE /* assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E23282B9E7200442BFE /* assets.swift */; };
+		7CD85E26282B9FFE00442BFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E25282B9FFE00442BFE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7CD85E1E282B939A00442BFE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7CD85E1F282B93AC00442BFE /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		7CD85E23282B9E7200442BFE /* assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assets.swift; sourceTree = "<group>"; };
+		7CD85E25282B9FFE00442BFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				7CD85E11282B86C500442BFE /* ContentView.swift */,
 				7CD85E20282B94B600442BFE /* Resource */,
 				7CD85E13282B86C900442BFE /* Assets.xcassets */,
+				7CD85E25282B9FFE00442BFE /* GoogleService-Info.plist */,
 				7CD85E15282B86C900442BFE /* Preview Content */,
 			);
 			path = tdlFB;
@@ -119,6 +122,7 @@
 				7CD85E08282B86C500442BFE /* Sources */,
 				7CD85E09282B86C500442BFE /* Frameworks */,
 				7CD85E0A282B86C500442BFE /* Resources */,
+				7CD85E28282BA1C000442BFE /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -153,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 7CD85E03282B86C500442BFE;
+			packageReferences = (
+				7CD85E27282BA15500442BFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7CD85E0D282B86C500442BFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,6 +176,7 @@
 			files = (
 				7CD85E17282B86C900442BFE /* Preview Assets.xcassets in Resources */,
 				7CD85E14282B86C900442BFE /* Assets.xcassets in Resources */,
+				7CD85E26282B9FFE00442BFE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +204,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7CD85E28282BA1C000442BFE /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftGen/bin/swiftgen\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -409,6 +435,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7CD85E27282BA15500442BFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 7CD85E04282B86C500442BFE /* Project object */;
 }
