@@ -6,12 +6,24 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 @main
 struct tdlFBApp: App {
+    
+    @StateObject var viewModel = AuthViewModel()
+    
+    init() {
+        
+        FirebaseApp.configure()
+        
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SwitchBetweenViews()
+                .environmentObject(viewModel)
         }
     }
 }
