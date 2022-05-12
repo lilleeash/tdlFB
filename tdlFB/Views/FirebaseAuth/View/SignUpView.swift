@@ -14,7 +14,7 @@ struct SignUpView: View {
     private let image = Asset.Images.signUp.name
     
     @State private var email: String = ""
-    @State private var password: String = ""
+    @State var password: String = ""
     
     @EnvironmentObject var viewModel: AuthViewModel
     
@@ -35,8 +35,8 @@ struct SignUpView: View {
                 
                 Text("Pasword")
                 
-                SecureField("Enter your password", text: $password)
-                    .textFieldStyle(MyTextFieldStyle())
+                SecureTextField(text: $password)
+                
             }
             .padding([.bottom, .top], 16)
             
@@ -60,10 +60,10 @@ struct SignUpView: View {
     }
 }
 
-#if DEBUG
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
-    }
-}
-#endif
+//#if DEBUG
+//struct SignUpView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SignUpView(password: $password)
+//    }
+//}
+//#endif
