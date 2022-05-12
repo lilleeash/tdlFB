@@ -18,14 +18,26 @@ struct HomeView: View {
                 Text("Home View")
             }
             .navigationBarTitle("Home View", displayMode: .large)
-            .navigationBarItems(trailing: Button(action: {
+            .navigationBarItems(leading: Button(action: {
                 sheetToggle.toggle()
             }) {
-                Image(systemName: "gearshape.fill")
+                Image(systemName: "list.bullet")
                     .foregroundColor(.black)
                     .font(.system(size: 20))
             }.sheet(isPresented: $sheetToggle, content: {
                 SettingsView()
+            }), trailing: Button(action: {
+                print("button is tapped")
+            }, label: {
+                Image(Asset.Images.profile.name)
+                    .resizable()
+                    .offset(y: 3)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .overlay {
+                        Circle().stroke(.gray, lineWidth: 1)
+                    }
             })
             )
         }

@@ -21,6 +21,7 @@ struct SettingsView: View {
             
             Button {
                 authViewModel.signOut()
+                presentationMode.wrappedValue.dismiss()
             } label: {
                 CustomSignOutButton()
             }

@@ -70,3 +70,20 @@ struct CustomSignOutButton: View {
         }.padding()
     }
 }
+
+
+struct SlideBarButton: View {
+    @State private var sheetToggle: Bool = false
+    var body: some View {
+    
+        Button(action: {
+            sheetToggle.toggle()
+        }) {
+            Image(systemName: "list.bullet")
+                .foregroundColor(.black)
+                .font(.system(size: 20))
+        }.sheet(isPresented: $sheetToggle, content: {
+            SettingsView()
+        })
+    }
+}

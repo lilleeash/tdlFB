@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041C3418282C69B700303288 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041C3417282C69B700303288 /* GoogleService-Info.plist */; };
 		0547D583877EC9EFBE3AD0EA /* Pods_tdlFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */; };
 		7CD85E10282B86C500442BFE /* tdlFBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E0F282B86C500442BFE /* tdlFBApp.swift */; };
 		7CD85E14282B86C900442BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E13282B86C900442BFE /* Assets.xcassets */; };
@@ -20,12 +21,12 @@
 		7CD85E38282BADC200442BFE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD85E37282BADC200442BFE /* FirebaseAuth */; };
 		7CD85E3A282BADC200442BFE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD85E39282BADC200442BFE /* FirebaseDatabase */; };
 		7CD85E3C282BAEBF00442BFE /* Modifires.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E3B282BAEBF00442BFE /* Modifires.swift */; };
-		7CD85E43282BB9F100442BFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E42282BB9F100442BFE /* GoogleService-Info.plist */; };
 		7CD85E49282BC00C00442BFE /* ToDoItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E48282BC00C00442BFE /* ToDoItemModel.swift */; };
 		7CD85E4C282BC2A300442BFE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E4B282BC2A300442BFE /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041C3417282C69B700303288 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FE25D568A4625394DE2146E /* Pods-tdlFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.debug.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.debug.xcconfig"; sourceTree = "<group>"; };
 		2941A6FD36A406A6DE3F57E8 /* Pods-tdlFB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.release.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.release.xcconfig"; sourceTree = "<group>"; };
 		5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tdlFB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +44,6 @@
 		7CD85E30282BA96800442BFE /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		7CD85E32282BA97200442BFE /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7CD85E3B282BAEBF00442BFE /* Modifires.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifires.swift; sourceTree = "<group>"; };
-		7CD85E42282BB9F100442BFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CD85E48282BC00C00442BFE /* ToDoItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemModel.swift; sourceTree = "<group>"; };
 		7CD85E4B282BC2A300442BFE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 				7CD85E3D282BAF7D00442BFE /* Views */,
 				7CD85E20282B94B600442BFE /* Resource */,
 				7CD85E13282B86C900442BFE /* Assets.xcassets */,
-				7CD85E42282BB9F100442BFE /* GoogleService-Info.plist */,
+				041C3417282C69B700303288 /* GoogleService-Info.plist */,
 				7CD85E15282B86C900442BFE /* Preview Content */,
 			);
 			path = tdlFB;
@@ -252,7 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD85E17282B86C900442BFE /* Preview Assets.xcassets in Resources */,
-				7CD85E43282BB9F100442BFE /* GoogleService-Info.plist in Resources */,
+				041C3418282C69B700303288 /* GoogleService-Info.plist in Resources */,
 				7CD85E14282B86C900442BFE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
