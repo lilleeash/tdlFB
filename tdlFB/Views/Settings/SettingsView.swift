@@ -9,19 +9,17 @@ import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
-    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var viewButtons: ViewButtonsViewModel
     var body: some View {
         VStack {
-            
-            Button("Dismiss") {
-                presentationMode.wrappedValue.dismiss()
-            }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing).padding()
             
             Text("Settings View")
             
             Button {
                 authViewModel.signOut()
-                presentationMode.wrappedValue.dismiss()
+                withAnimation {
+                    self.viewButtons.currentView = .registrationView
+                }
             } label: {
                 CustomSignOutButton()
             }

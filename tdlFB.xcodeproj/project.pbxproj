@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		041C3418282C69B700303288 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041C3417282C69B700303288 /* GoogleService-Info.plist */; };
 		0547D583877EC9EFBE3AD0EA /* Pods_tdlFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */; };
+		7C988D1F282CD8BF005779F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C988D1E282CD8BF005779F2 /* ViewModel.swift */; };
+		7C988D21282CD973005779F2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C988D20282CD973005779F2 /* MainViewModel.swift */; };
+		7C988D24282CDAE4005779F2 /* UserPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C988D23282CDAE4005779F2 /* UserPageView.swift */; };
 		7CD85E10282B86C500442BFE /* tdlFBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD85E0F282B86C500442BFE /* tdlFBApp.swift */; };
 		7CD85E14282B86C900442BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E13282B86C900442BFE /* Assets.xcassets */; };
 		7CD85E17282B86C900442BFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD85E16282B86C900442BFE /* Preview Assets.xcassets */; };
@@ -30,6 +33,9 @@
 		0FE25D568A4625394DE2146E /* Pods-tdlFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.debug.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.debug.xcconfig"; sourceTree = "<group>"; };
 		2941A6FD36A406A6DE3F57E8 /* Pods-tdlFB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.release.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.release.xcconfig"; sourceTree = "<group>"; };
 		5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tdlFB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C988D1E282CD8BF005779F2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7C988D20282CD973005779F2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7C988D23282CDAE4005779F2 /* UserPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageView.swift; sourceTree = "<group>"; };
 		7CD85E0C282B86C500442BFE /* tdlFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tdlFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD85E0F282B86C500442BFE /* tdlFBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tdlFBApp.swift; sourceTree = "<group>"; };
 		7CD85E13282B86C900442BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +76,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C988D22282CDACC005779F2 /* UserPage */ = {
+			isa = PBXGroup;
+			children = (
+				7C988D23282CDAE4005779F2 /* UserPageView.swift */,
+			);
+			path = UserPage;
+			sourceTree = "<group>";
+		};
 		7CD85E03282B86C500442BFE = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD85E0F282B86C500442BFE /* tdlFBApp.swift */,
+				7C988D20282CD973005779F2 /* MainViewModel.swift */,
 				7CD85E3D282BAF7D00442BFE /* Views */,
 				7CD85E20282B94B600442BFE /* Resource */,
 				7CD85E13282B86C900442BFE /* Assets.xcassets */,
@@ -124,6 +139,7 @@
 		7CD85E3D282BAF7D00442BFE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7C988D22282CDACC005779F2 /* UserPage */,
 				7CD85E4A282BC28400442BFE /* Settings */,
 				7CD85E3E282BAF8900442BFE /* FirebaseAuth */,
 				7CD85E3F282BAF9A00442BFE /* Home */,
@@ -145,6 +161,7 @@
 			children = (
 				7CD85E32282BA97200442BFE /* HomeView.swift */,
 				7CD85E48282BC00C00442BFE /* ToDoItemModel.swift */,
+				7C988D1E282CD8BF005779F2 /* ViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -310,13 +327,16 @@
 				7CD85E49282BC00C00442BFE /* ToDoItemModel.swift in Sources */,
 				7CD85E24282B9E7200442BFE /* assets.swift in Sources */,
 				7CD85E3C282BAEBF00442BFE /* Modifires.swift in Sources */,
+				7C988D1F282CD8BF005779F2 /* ViewModel.swift in Sources */,
 				7CD85E2D282BA96100442BFE /* RegistratioinView.swift in Sources */,
 				7CD85E31282BA96900442BFE /* AuthViewModel.swift in Sources */,
 				7CD85E4C282BC2A300442BFE /* SettingsView.swift in Sources */,
 				7CD85E10282B86C500442BFE /* tdlFBApp.swift in Sources */,
 				7CD85E34282BA97200442BFE /* HomeView.swift in Sources */,
 				7CD85E2F282BA96100442BFE /* SignUpView.swift in Sources */,
+				7C988D24282CDAE4005779F2 /* UserPageView.swift in Sources */,
 				7CD85E2E282BA96100442BFE /* SignInView.swift in Sources */,
+				7C988D21282CD973005779F2 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

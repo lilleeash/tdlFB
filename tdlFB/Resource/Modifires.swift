@@ -73,17 +73,30 @@ struct CustomSignOutButton: View {
 
 
 struct SlideBarButton: View {
-    @State private var sheetToggle: Bool = false
     var body: some View {
-    
-        Button(action: {
-            sheetToggle.toggle()
-        }) {
-            Image(systemName: "list.bullet")
-                .foregroundColor(.black)
-                .font(.system(size: 20))
-        }.sheet(isPresented: $sheetToggle, content: {
-            SettingsView()
-        })
+        Image(systemName: "list.bullet")
+            .foregroundColor(.black)
+            .font(.system(size: 20))
+    }
+}
+
+
+struct UserButton: View {
+    var body: some View {
+            Image(Asset.Images.profile.name)
+                .resizable()
+                .offset(y: 3)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40, height: 40)
+                .clipShape(Circle())
+                .overlay {
+                    Circle().stroke(.gray, lineWidth: 1)
+                }
+    }
+}
+
+struct SlideBarButton_Previews: PreviewProvider {
+    static var previews: some View {
+        UserButton()
     }
 }

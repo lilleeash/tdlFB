@@ -17,6 +17,7 @@ struct SignInView: View {
     @State private var password: String = ""
     
     @EnvironmentObject var authViewModel: AuthViewModel
+    @EnvironmentObject var viewButtons: ViewButtonsViewModel
     
     var body: some View {
         
@@ -50,6 +51,9 @@ struct SignInView: View {
             Button {
                 if !email.isEmpty, !password.isEmpty {
                     authViewModel.loginUser(email: email, password: password)
+                    withAnimation {
+                        self.viewButtons.currentView = .homeView
+                    }
                 }
             } label: {
                 MainButton(buttonText: "Confirm")

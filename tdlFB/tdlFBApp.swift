@@ -13,6 +13,7 @@ import FirebaseAuth
 struct tdlFBApp: App {
     
     @StateObject var authViewModel = AuthViewModel()
+    @StateObject var buttonViewModel = ViewButtonsViewModel()
     
     init() {
         
@@ -24,6 +25,7 @@ struct tdlFBApp: App {
         WindowGroup {
             SwitchBetweenViews()
                 .environmentObject(authViewModel)
+                .environmentObject(buttonViewModel)
         }
     }
 }
