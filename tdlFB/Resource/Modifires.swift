@@ -21,7 +21,7 @@ struct MainButton: View {
             Text(buttonText)
                 .font(.title3)
                 .foregroundColor(.white)
-        }
+        }.padding(8)
     }
 }
 
@@ -38,7 +38,7 @@ struct SignInWithAppleButton: View {
             Label("Sign In with Apple", systemImage: "applelogo")
                 .font(.system(size: 19))
                 .foregroundColor(Color(Asset.Colors.signInApple.name))
-        }
+        }.padding(8)
     }
 }
 
@@ -67,7 +67,7 @@ struct CustomSignOutButton: View {
                 .frame(maxWidth: .infinity, maxHeight: 45)
             Text("Sign Out")
                 .foregroundColor(.red)
-        }.padding()
+        }.padding(8)
     }
 }
 

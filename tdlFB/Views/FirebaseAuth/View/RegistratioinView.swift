@@ -37,7 +37,6 @@ struct RegistratioinView: View {
                 
             }
             .navigationTitle("Registration")
-            .padding()
         }
     }
 }
