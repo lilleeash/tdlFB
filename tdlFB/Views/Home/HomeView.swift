@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
-    
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Home View")
-            }
-            .navigationBarTitle("Home", displayMode: .large)
-            .navigationBarItems(
-                leading: NavigationLink(destination: SettingsView()) {
-                    SlideBarButton()
-                }, trailing: NavigationLink(destination: UserPageView()){
-                    UserButton()
+            ZStack {
+                ScrollView {
+                    ForEach(ToDoItemModel.items) { item in
+                        HomeWeekRowView(item: item)
+                    }
                 }
+                AddItemButton()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+            }
+            .navigationBarTitle("Today, 23rd of December", displayMode: .inline)
+            .navigationBarItems(leading: NavigationLink(destination: SettingsView()) {
+                SlideBarButton()
+            }, trailing: NavigationLink(destination: UserPageView()) {
+                UserButton()
+            }
             )
         }
     }

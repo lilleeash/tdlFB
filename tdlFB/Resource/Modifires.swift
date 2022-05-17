@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-// Modifires and components for Apllication
+//MARK: - Modifires and components for Apllication
 
 //UI of button for Registration/SignIn/SignUp Views
 struct MainButton: View {
@@ -95,8 +95,27 @@ struct UserButton: View {
     }
 }
 
+struct AddItemButton: View {
+    var body: some View {
+        Button {
+            print("add")
+        } label: {
+            ZStack {
+                Circle()
+                    .foregroundColor(Color.accentColor)
+                    .frame(width: 50, height: 50)
+                Image(systemName: "plus")
+                    .foregroundColor(.white)
+                    .font(.system(size: 35))
+            }
+            .padding()
+        }
+        
+    }
+}
+
 struct SlideBarButton_Previews: PreviewProvider {
     static var previews: some View {
-        UserButton()
+        AddItemButton()
     }
 }
