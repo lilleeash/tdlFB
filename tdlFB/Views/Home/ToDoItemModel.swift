@@ -13,9 +13,9 @@ struct ToDoItemModel: Identifiable {
     
     var id = UUID().uuidString
     
-    var toDo: [String]
+    var toDo: String
     var date: String
-    var color: Color
+    var color: Color = .accentColor
     
     /*
      
@@ -25,17 +25,4 @@ struct ToDoItemModel: Identifiable {
      var location (using mapKit)
      
     */
-    
-    static var items: [ToDoItemModel] = [
-        ToDoItemModel(toDo: ["Play with brother", "Cook dinner"], date: "20th Mon", color: .red),
-        ToDoItemModel(toDo: ["Play with brother", "Cook dinner"], date: "21st Tue", color: .blue),
-        ToDoItemModel(toDo: ["Play with brother", "Cook dinner"], date: "22nd Wed", color: .orange),
-        ToDoItemModel(toDo: ["Play with brother", "Cook dinner"], date: "23rd Thu", color: .green),
-        ToDoItemModel(toDo: ["Play with brother", "Cook dinner"], date: "24th Fri", color: .purple),
-        ToDoItemModel(toDo: ["Play with brother", "Cook dinner"], date: "25th Sat", color: .mint),
-        ToDoItemModel(toDo: ["Play with brother", "Cook dinner"], date: "26th Sun", color: .pink),
-       
-    ]
-    
 }
-

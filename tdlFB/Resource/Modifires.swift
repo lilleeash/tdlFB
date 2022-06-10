@@ -12,16 +12,18 @@ import SwiftUI
 
 //UI of button for Registration/SignIn/SignUp Views
 struct MainButton: View {
+    var width: CGFloat
+    var height: CGFloat
     var buttonText: String
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 7)
                 .foregroundColor(Color(Asset.accentColor.name))
-                .frame(width: 225, height: 44)
+                .frame(width: width, height: height)
             Text(buttonText)
                 .font(.title3)
                 .foregroundColor(.white)
-        }.padding(8)
+        }
     }
 }
 
@@ -96,9 +98,10 @@ struct UserButton: View {
 }
 
 struct AddItemButton: View {
+    @Binding var isShowingSheet: Bool
     var body: some View {
         Button {
-            print("add")
+            isShowingSheet.toggle()
         } label: {
             ZStack {
                 Circle()
@@ -110,12 +113,42 @@ struct AddItemButton: View {
             }
             .padding()
         }
-        
+        .sheet(isPresented: $isShowingSheet, content: {
+            AddItemView()
+        })
     }
 }
 
-struct SlideBarButton_Previews: PreviewProvider {
-    static var previews: some View {
-        AddItemButton()
+struct ToggleAddItem: View {
+    
+    @Binding var isOn: Bool
+    var backgroundColor: Color
+    var image: String
+    var title: String
+    var time: String
+    
+    var body: some View {
+        Toggle(isOn: $isOn) {
+            HStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .foregroundColor(backgroundColor)
+                    Image(systemName: image)
+                        .foregroundColor(.white)
+                        .font(.system(size: 19))
+                }
+                .frame(width: 30, height: 30)
+                .padding(5)
+                VStack {
+                    Text(title)
+                    if isOn {
+                        Text(time)
+                            .font(.caption)
+                            .foregroundColor(.accentColor)
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
     }
 }

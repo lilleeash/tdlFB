@@ -22,9 +22,7 @@ struct HomeWeekRowView: View {
                         .font(.title2)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                     
-                    Text(item.toDo[0])
-                    
-                    Text(item.toDo[1])
+                    Text(item.toDo)
                 }
                 .foregroundColor(.white)
             }
@@ -43,7 +41,7 @@ struct HomeWeekRowView: View {
 #if DEBUG
 struct HomeWeekRowView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeWeekRowView(item:  ToDoItemModel(toDo: ["Play with brother", "Cook dinner"], date: "20th Mon", color: .mint))
+        HomeWeekRowView(item:  ToDoItemModel(toDo: "Play with brother", date: "20th Mon", color: .mint))
     }
 }
 #endif

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040924962852584F001A7151 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040924952852584F001A7151 /* ItemDetailView.swift */; };
+		0409EF49285010E900C05699 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409EF48285010E900C05699 /* AddItemView.swift */; };
 		041C3418282C69B700303288 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041C3417282C69B700303288 /* GoogleService-Info.plist */; };
 		0424D4E328337F8400F63D81 /* HomeWeekRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424D4E228337F8400F63D81 /* HomeWeekRowView.swift */; };
 		0547D583877EC9EFBE3AD0EA /* Pods_tdlFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040924952852584F001A7151 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		0409EF48285010E900C05699 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		041C3417282C69B700303288 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0424D4E228337F8400F63D81 /* HomeWeekRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeekRowView.swift; sourceTree = "<group>"; };
 		0FE25D568A4625394DE2146E /* Pods-tdlFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.debug.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040924942852582F001A7151 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				040924952852584F001A7151 /* ItemDetailView.swift */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		0409EF47285010BE00C05699 /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				0409EF48285010E900C05699 /* AddItemView.swift */,
+			);
+			path = AddItem;
+			sourceTree = "<group>";
+		};
 		4A8212C4769419BAF01C8022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +165,8 @@
 				7CD85E4A282BC28400442BFE /* Settings */,
 				7CD85E3E282BAF8900442BFE /* FirebaseAuth */,
 				7CD85E3F282BAF9A00442BFE /* Home */,
+				040924942852582F001A7151 /* ItemDetail */,
+				0409EF47285010BE00C05699 /* AddItem */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +353,7 @@
 				7CD85E24282B9E7200442BFE /* assets.swift in Sources */,
 				7CD85E3C282BAEBF00442BFE /* Modifires.swift in Sources */,
 				7C988D1F282CD8BF005779F2 /* ViewModel.swift in Sources */,
+				0409EF49285010E900C05699 /* AddItemView.swift in Sources */,
 				7CD85E2D282BA96100442BFE /* RegistratioinView.swift in Sources */,
 				7CD85E31282BA96900442BFE /* AuthViewModel.swift in Sources */,
 				7CD85E4C282BC2A300442BFE /* SettingsView.swift in Sources */,
@@ -338,6 +361,7 @@
 				7CD85E34282BA97200442BFE /* HomeView.swift in Sources */,
 				7CD85E2F282BA96100442BFE /* SignUpView.swift in Sources */,
 				0424D4E328337F8400F63D81 /* HomeWeekRowView.swift in Sources */,
+				040924962852584F001A7151 /* ItemDetailView.swift in Sources */,
 				7C988D24282CDAE4005779F2 /* UserPageView.swift in Sources */,
 				7CD85E2E282BA96100442BFE /* SignInView.swift in Sources */,
 				7C988D21282CD973005779F2 /* MainViewModel.swift in Sources */,

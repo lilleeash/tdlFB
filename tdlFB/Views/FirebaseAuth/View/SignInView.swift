@@ -56,7 +56,7 @@ struct SignInView: View {
                     }
                 }
             } label: {
-                MainButton(buttonText: "Confirm")
+                MainButton(width: 250, height: 42, buttonText: "Confirm")
             }
 
         }

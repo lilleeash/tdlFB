@@ -27,12 +27,16 @@ struct UserPageView: View {
                         .font(.system(size: 17))
                     
                     Divider()
-                    Text("Name: Darya\nDate of Birth: 16.11.2004\nE-mail: l******h@icloud.com")
+        
+                    Text("Name: Darya")
+                    
+                    Text("Date of Birth: 16.11.2004")
+                    
+                    Text("E-mail: lilleeash@icloud.com")
                 }
             }
             .padding()
             .navigationTitle("User")
-            //.navigationBarItems(trailing: EditButton())
         }
     }
 }

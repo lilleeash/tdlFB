@@ -22,11 +22,11 @@ struct RegistratioinView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 
                 NavigationLink(destination: SignInView()) {
-                    MainButton(buttonText: "Sign In")
+                    MainButton(width: 225, height: 44, buttonText: "Sign In")
                 }
                 
                 NavigationLink(destination: SignUpView()) {
-                    MainButton(buttonText: "Sign Up")
+                    MainButton(width: 225, height: 44, buttonText: "Sign Up")
                 }
                 
                 Button(action: {
