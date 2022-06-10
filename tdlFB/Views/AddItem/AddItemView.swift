@@ -9,11 +9,14 @@ import SwiftUI
 
 struct AddItemView: View {
     
+    // MARK: - Properties
     @EnvironmentObject var toDoItemViewModel: ToDoItemViewModel
     @Environment(\.presentationMode) var presentationMode
     @State var text: String = ""
     @State private var isOnToggle = false
-    @State private var data = Date()
+    @State private var date = Date()
+    
+    // MARK: - var body: some View
     
     var body: some View {
         NavigationView {
@@ -27,9 +30,9 @@ struct AddItemView: View {
                         
                     }
                     
-                    ToggleAddItem(isOn: $isOnToggle, backgroundColor: .yellow, image: "calendar", title: "Date & Time", time: data.formatted(date: .long, time: .omitted))
+                    ToggleAddItem(isOn: $isOnToggle, backgroundColor: .yellow, image: "calendar", title: "Date & Time", time: date.formatted(date: .long, time: .omitted))
                     if isOnToggle {
-                        DatePicker("Select a data", selection: $data)
+                        DatePicker("Select a data", selection: $date)
                             .datePickerStyle(.graphical)
                             .padding()
                     }
@@ -51,11 +54,15 @@ struct AddItemView: View {
         }
     }
     
+    // MARK: - Methods
+    
     func saveButtonPressed() {
-        toDoItemViewModel.addItem(toDo: text, date: data.formatted(date: .abbreviated, time: .omitted))
+        toDoItemViewModel.addItem(toDo: text, date: date.formatted(date: .abbreviated, time: .omitted))
         presentationMode.wrappedValue.dismiss()
     }
 }
+
+
 
 struct AddItemView_Preview: PreviewProvider {
     static var previews: some View {

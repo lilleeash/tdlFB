@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ItemDetailView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-struct ItemDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemDetailView()
+    @EnvironmentObject var toDoItemViewModel: ToDoItemViewModel
+    var date: String
+    var time: String
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                Text(date)
+                Text(time)
+            }
+        }
+        .navigationTitle("ToDo Detail")
     }
 }

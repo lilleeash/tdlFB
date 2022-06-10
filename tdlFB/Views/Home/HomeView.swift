@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    // MARK: - Properties
+    
     @State var isSheet: Bool = false
+    @State private var date = Date()
     @EnvironmentObject var toDoItemViewModel: ToDoItemViewModel
     var body: some View {
         NavigationView {
@@ -24,32 +28,21 @@ struct HomeView: View {
                     VStack {
                         ForEach(toDoItemViewModel.items) { item in
                             NavigationLink {
-                                ItemDetailView()
+                                ItemDetailView(date: date.formatted(date: .complete, time: .omitted), time: date.formatted(date: .omitted, time: .shortened))
                             } label: {
                                 HomeWeekRowView(item: item)
                             }
-
+                            
                         }
                     }
-                .navigationBarTitle("Today, 23rd of December", displayMode: .inline)
-                .navigationBarItems(leading: NavigationLink(destination: SettingsView()) {
-                    SlideBarButton()
-                }, trailing: NavigationLink(destination: UserPageView()) {
-                    UserButton()
+                    .navigationBarTitle("Today, \(date.formatted(date: .abbreviated, time: .omitted))", displayMode: .inline)
+                    .navigationBarItems(leading: NavigationLink(destination: SettingsView()) { SlideBarButton() },
+                                        trailing: NavigationLink(destination: UserPageView()) { UserButton() }
+                    )
                 }
-                )
-            }
                 AddItemButton(isShowingSheet: $isSheet)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
             }
         }
     }
 }
-
-#if DEBUG
-struct HomeView_Provider: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
-#endif

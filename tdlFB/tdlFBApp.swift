@@ -25,14 +25,14 @@ struct tdlFBApp: App {
     var body: some Scene {
         WindowGroup {
             // with firebase auth
-            SwitchBetweenViews()
-                .environmentObject(authViewModel)
-                .environmentObject(buttonViewModel)
-                .environmentObject(toDoItemViewModel)
+//            SwitchBetweenViews()
+//                .environmentObject(authViewModel)
+//                .environmentObject(buttonViewModel)
+//                .environmentObject(toDoItemViewModel)
             
             // only home view
-//            HomeView()
-//                .environmentObject(toDoItemViewModel)
+            HomeView()
+                .environmentObject(toDoItemViewModel)
         }
     }
 }

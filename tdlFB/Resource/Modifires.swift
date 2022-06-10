@@ -10,7 +10,8 @@ import SwiftUI
 
 //MARK: - Modifires and components for Apllication
 
-//UI of button for Registration/SignIn/SignUp Views
+// MARK: - Main button
+
 struct MainButton: View {
     var width: CGFloat
     var height: CGFloat
@@ -26,6 +27,8 @@ struct MainButton: View {
         }
     }
 }
+
+// MARK: - Sign in with Apple Button
 
 struct SignInWithAppleButton: View {
     var body: some View {
@@ -44,6 +47,8 @@ struct SignInWithAppleButton: View {
     }
 }
 
+// MARK: - TextField
+
 //Modifer for textField in Sign In/Up
 // .textFieldStyle(CustomTextFieldModiferStruct())
 struct MyTextFieldStyle: TextFieldStyle {
@@ -59,6 +64,7 @@ struct MyTextFieldStyle: TextFieldStyle {
     }
 }
 
+// MARK: - Sign Out Button
 
 struct CustomSignOutButton: View {
     var body: some View {
@@ -73,6 +79,7 @@ struct CustomSignOutButton: View {
     }
 }
 
+// MARK: - SlideBar Button
 
 struct SlideBarButton: View {
     var body: some View {
@@ -82,6 +89,7 @@ struct SlideBarButton: View {
     }
 }
 
+// MARK: - Icon of user button
 
 struct UserButton: View {
     var body: some View {
@@ -96,6 +104,8 @@ struct UserButton: View {
                 }
     }
 }
+
+// MARK: - Add Item button
 
 struct AddItemButton: View {
     @Binding var isShowingSheet: Bool
@@ -118,6 +128,8 @@ struct AddItemButton: View {
         })
     }
 }
+
+// MARK: - Toggle 
 
 struct ToggleAddItem: View {
     
