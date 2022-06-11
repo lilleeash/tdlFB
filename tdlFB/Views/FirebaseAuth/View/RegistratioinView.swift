@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegistratioinView: View {
     
-    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var authViewModel: AuthViewModel
     @State private var currentPage: Views = .registrationView
     private let regImage = Asset.Images.registration.name
     
@@ -22,11 +22,11 @@ struct RegistratioinView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 
                 NavigationLink(destination: SignInView()) {
-                    MainButton(buttonText: "Sign In")
+                    MainButton(width: 225, height: 44, buttonText: "Sign In")
                 }
                 
                 NavigationLink(destination: SignUpView()) {
-                    MainButton(buttonText: "Sign Up")
+                    MainButton(width: 225, height: 44, buttonText: "Sign Up")
                 }
                 
                 Button(action: {
@@ -37,7 +37,6 @@ struct RegistratioinView: View {
                 
             }
             .navigationTitle("Registration")
-            .padding()
         }
     }
 }

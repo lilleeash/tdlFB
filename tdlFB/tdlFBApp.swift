@@ -12,7 +12,9 @@ import FirebaseAuth
 @main
 struct tdlFBApp: App {
     
-    @StateObject var viewModel = AuthViewModel()
+    @StateObject var authViewModel = AuthViewModel()
+    @StateObject var buttonViewModel = ViewButtonsViewModel()
+    @StateObject var toDoItemViewModel: ToDoItemViewModel = ToDoItemViewModel()
     
     init() {
         
@@ -22,8 +24,15 @@ struct tdlFBApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SwitchBetweenViews()
-                .environmentObject(viewModel)
+            // with firebase auth
+//            SwitchBetweenViews()
+//                .environmentObject(authViewModel)
+//                .environmentObject(buttonViewModel)
+//                .environmentObject(toDoItemViewModel)
+            
+            // only home view
+            HomeView()
+                .environmentObject(toDoItemViewModel)
         }
     }
 }
