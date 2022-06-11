@@ -130,6 +130,7 @@
 		7CD85E0E282B86C500442BFE /* tdlFB */ = {
 			isa = PBXGroup;
 			children = (
+				04271A4F285377D900B41F13 /* GoogleService-Info.plist */,
 				7CD85E0F282B86C500442BFE /* tdlFBApp.swift */,
 				7C988D20282CD973005779F2 /* MainViewModel.swift */,
 				7CD85E3D282BAF7D00442BFE /* Views */,
@@ -294,8 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD85E17282B86C900442BFE /* Preview Assets.xcassets in Resources */,
-				041C3418282C69B700303288 /* GoogleService-Info.plist in Resources */,
 				7CD85E14282B86C900442BFE /* Assets.xcassets in Resources */,
+				04271A50285377D900B41F13 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
