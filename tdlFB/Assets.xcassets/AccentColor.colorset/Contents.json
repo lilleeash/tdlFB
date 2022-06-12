@@ -6,6 +6,24 @@
         "reference" : "systemIndigoColor"
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.918",
+          "green" : "0.511",
+          "red" : "0.493"
+        }
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

@@ -64,7 +64,6 @@ struct MyTextFieldStyle: TextFieldStyle {
     }
 }
 
-<<<<<<< HEAD
 struct SecureTextField: View {
     
     @State private var isSecure: Bool = true
@@ -85,7 +84,9 @@ struct SecureTextField: View {
                 .onTapGesture {
                     isSecure.toggle()
                 }
-=======
+        }
+    }
+}
 // MARK: - Sign Out Button
 
 struct CustomSignOutButton: View {
@@ -183,7 +184,6 @@ struct ToggleAddItem: View {
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
->>>>>>> master
         }
     }
 }
