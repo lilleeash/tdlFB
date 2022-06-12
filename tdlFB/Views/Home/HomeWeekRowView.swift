@@ -38,10 +38,3 @@ struct HomeWeekRowView: View {
     }
 }
 
-#if DEBUG
-struct HomeWeekRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeWeekRowView(item:  ToDoItemModel(toDo: "Play with brother", date: "20th Mon", color: .mint))
-    }
-}
-#endif

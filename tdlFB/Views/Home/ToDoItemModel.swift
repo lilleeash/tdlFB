@@ -15,6 +15,7 @@ struct ToDoItemModel: Identifiable {
     
     var toDo: String
     var date: String
+    var time: String
     var color: Color = .accentColor
     
     /*

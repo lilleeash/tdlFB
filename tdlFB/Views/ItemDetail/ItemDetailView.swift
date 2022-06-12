@@ -10,14 +10,14 @@ import SwiftUI
 struct ItemDetailView: View {
 
     @EnvironmentObject var toDoItemViewModel: ToDoItemViewModel
-    var date: String
-    var time: String
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text(date)
-                Text(time)
+            ForEach(toDoItemViewModel.items) { item in 
+                VStack {
+                    Text(item.date)
+                    Text(item.time)
+                }
             }
         }
         .navigationTitle("ToDo Detail")

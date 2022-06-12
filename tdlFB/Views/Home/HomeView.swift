@@ -28,7 +28,7 @@ struct HomeView: View {
                     VStack {
                         ForEach(toDoItemViewModel.items) { item in
                             NavigationLink {
-                                ItemDetailView(date: date.formatted(date: .complete, time: .omitted), time: date.formatted(date: .omitted, time: .shortened))
+                                ItemDetailView()
                             } label: {
                                 HomeWeekRowView(item: item)
                             }

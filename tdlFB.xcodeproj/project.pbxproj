@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		040924962852584F001A7151 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040924952852584F001A7151 /* ItemDetailView.swift */; };
 		0409EF49285010E900C05699 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409EF48285010E900C05699 /* AddItemView.swift */; };
-		041C3418282C69B700303288 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041C3417282C69B700303288 /* GoogleService-Info.plist */; };
 		0424D4E328337F8400F63D81 /* HomeWeekRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424D4E228337F8400F63D81 /* HomeWeekRowView.swift */; };
+		0460BA6028560101004DA927 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0460BA5F28560101004DA927 /* GoogleService-Info.plist */; };
 		0547D583877EC9EFBE3AD0EA /* Pods_tdlFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */; };
 		7C988D1F282CD8BF005779F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C988D1E282CD8BF005779F2 /* ViewModel.swift */; };
 		7C988D21282CD973005779F2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C988D20282CD973005779F2 /* MainViewModel.swift */; };
@@ -34,8 +34,8 @@
 /* Begin PBXFileReference section */
 		040924952852584F001A7151 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		0409EF48285010E900C05699 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
-		041C3417282C69B700303288 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0424D4E228337F8400F63D81 /* HomeWeekRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeekRowView.swift; sourceTree = "<group>"; };
+		0460BA5F28560101004DA927 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FE25D568A4625394DE2146E /* Pods-tdlFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.debug.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.debug.xcconfig"; sourceTree = "<group>"; };
 		2941A6FD36A406A6DE3F57E8 /* Pods-tdlFB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tdlFB.release.xcconfig"; path = "Target Support Files/Pods-tdlFB/Pods-tdlFB.release.xcconfig"; sourceTree = "<group>"; };
 		5091C459A23C12A7885FD48B /* Pods_tdlFB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tdlFB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +112,7 @@
 				7CD85E1D282B877200442BFE /* .gitignore */,
 				7CD85E1E282B939A00442BFE /* Podfile */,
 				7CD85E1F282B93AC00442BFE /* swiftgen.yml */,
+				0460BA5F28560101004DA927 /* GoogleService-Info.plist */,
 				7CD85E0E282B86C500442BFE /* tdlFB */,
 				7CD85E0D282B86C500442BFE /* Products */,
 				87E866D4425A6ED60EAD93BB /* Pods */,
@@ -130,13 +131,11 @@
 		7CD85E0E282B86C500442BFE /* tdlFB */ = {
 			isa = PBXGroup;
 			children = (
-				04271A4F285377D900B41F13 /* GoogleService-Info.plist */,
 				7CD85E0F282B86C500442BFE /* tdlFBApp.swift */,
 				7C988D20282CD973005779F2 /* MainViewModel.swift */,
 				7CD85E3D282BAF7D00442BFE /* Views */,
 				7CD85E20282B94B600442BFE /* Resource */,
 				7CD85E13282B86C900442BFE /* Assets.xcassets */,
-				041C3417282C69B700303288 /* GoogleService-Info.plist */,
 				7CD85E15282B86C900442BFE /* Preview Content */,
 			);
 			path = tdlFB;
@@ -296,7 +295,7 @@
 			files = (
 				7CD85E17282B86C900442BFE /* Preview Assets.xcassets in Resources */,
 				7CD85E14282B86C900442BFE /* Assets.xcassets in Resources */,
-				04271A50285377D900B41F13 /* GoogleService-Info.plist in Resources */,
+				0460BA6028560101004DA927 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

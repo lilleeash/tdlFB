@@ -23,9 +23,9 @@ class ToDoItemViewModel: ObservableObject {
    func moveItemes(from: IndexSet, to: Int) {
       items.move(fromOffsets: from, toOffset: to)
    }
-    func addItem(toDo: String, date: String)
+    func addItem(toDo: String, date: String, time: String)
    {
-       var newItems = ToDoItemModel(toDo: toDo, date: date)
+       var newItems = ToDoItemModel(toDo: toDo, date: date, time: time)
       items.append(newItems)
    }
    func updateItem(item: ToDoItemModel)

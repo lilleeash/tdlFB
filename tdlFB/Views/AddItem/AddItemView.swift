@@ -57,7 +57,7 @@ struct AddItemView: View {
     // MARK: - Methods
     
     func saveButtonPressed() {
-        toDoItemViewModel.addItem(toDo: text, date: date.formatted(date: .abbreviated, time: .omitted))
+        toDoItemViewModel.addItem(toDo: text, date: date.formatted(date: .abbreviated, time: .omitted), time: date.formatted(date: .omitted, time: .shortened))
         presentationMode.wrappedValue.dismiss()
     }
 }
