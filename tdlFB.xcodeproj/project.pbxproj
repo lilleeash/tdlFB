@@ -136,6 +136,7 @@
 				7CD85E3D282BAF7D00442BFE /* Views */,
 				7CD85E20282B94B600442BFE /* Resource */,
 				7CD85E13282B86C900442BFE /* Assets.xcassets */,
+				041C3415282C693900303288 /* GoogleService-Info.plist */,
 				7CD85E15282B86C900442BFE /* Preview Content */,
 			);
 			path = tdlFB;

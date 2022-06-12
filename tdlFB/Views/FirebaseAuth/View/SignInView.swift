@@ -35,8 +35,7 @@ struct SignInView: View {
                 
                 Text("Pasword")
                 
-                SecureField("Enter your password", text: $password)
-                    .textFieldStyle(MyTextFieldStyle())
+                SecureTextField(text: $password)
             }
             .padding([.bottom, .top], 16)
             
