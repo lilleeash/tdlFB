@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct UserPageView: View {
+    
+    @EnvironmentObject var userViewModel: UserViewModel
     private let userImage = Asset.Images.profile.name
     var body: some View {
         NavigationView {
@@ -28,7 +30,7 @@ struct UserPageView: View {
                     
                     Divider()
         
-                    Text("Name: Darya")
+                    Text("Name: ")
                     
                     Text("Date of Birth: 16.11.2004")
                     

@@ -14,7 +14,8 @@ struct tdlFBApp: App {
     
     @StateObject var authViewModel = AuthViewModel()
     @StateObject var buttonViewModel = ViewButtonsViewModel()
-    @StateObject var toDoItemViewModel: ToDoItemViewModel = ToDoItemViewModel()
+    @StateObject var toDoItemViewModel = ToDoItemViewModel()
+    @StateObject var userInfo = UserViewModel()
     
     init() {
         
