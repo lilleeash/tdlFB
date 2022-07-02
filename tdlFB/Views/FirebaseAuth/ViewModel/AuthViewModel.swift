@@ -7,7 +7,7 @@
 
 import Foundation
 import FirebaseAuth
-import Firebase
+import FirebaseCore
 import SwiftUI
 
 
